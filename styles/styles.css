@@ -1,8 +1,23 @@
-h1 {
+body {
+  height: 100%;
+  margin: 0;
   font-family: 'Montserrat', sans-serif;
+}
+
+section {
+  height: 100vh;
+}
+
+h1 {
   font-size: 3rem;
   line-height: 1.5;
   font-weight: 900;
+  color: #323232;
+}
+
+h5 {
+  line-height: 1.5;
+  color: #323232;
 }
 
 .container-fluid {
@@ -21,4 +36,8 @@ h1 {
 
 .hidden {
   display: none;
+}
+
+.btn-dark {
+  background-color: #323232;
 }
