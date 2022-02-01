@@ -5,6 +5,7 @@ body {
 }
 
 h1 {
+  font-family: 'Baloo Bhaijaan 2';
   font-size: 3.2rem;
   line-height: 1.5;
   font-weight: 900;
@@ -24,7 +25,7 @@ h5 {
 #home {
   background-color: #4158d0;
   background-image: linear-gradient(
-    43deg,
+    30deg,
     #4158d0 0%,
     #c850c0 46%,
     #ffcc70 100%
@@ -35,6 +36,12 @@ h5 {
 
 .navbar {
   padding-bottom: 2.5rem;
+}
+
+.navbar-brand {
+  width: 150px;
+  -webkit-filter: drop-shadow(5px 5px 5px #A267AC);
+  filter: drop-shadow(5px 5px 5px #A267AC);
 }
 
 .nav-item {
