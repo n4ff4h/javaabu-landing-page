@@ -8,20 +8,20 @@ h1 {
   font-size: 3.2rem;
   line-height: 1.5;
   font-weight: 900;
-  color: #323232;
+  color: #FFEDDB;
 }
 
 h5 {
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5;
-  color: #393E46;
+  color: #FFEDDB;
 }
 
-.container-fluid {
+.main-div {
     padding: 3% 15%;
 }
 
-#title {
+#home {
   background-color: #4158d0;
   background-image: linear-gradient(
     43deg,
@@ -56,6 +56,14 @@ h5 {
   margin: 5% 3% 5% 0;
 }
 
-.btn-dark {
-  background-color: #323232;
+/* !important is important */
+.btn-outline-light {
+  background-color: #8064A2 !important;
+  color: #FFEDDB;
+  border-color: #FFEDDB;
+}
+
+.btn-outline-light:hover {
+  background-color: #FFEDDB !important;
+  color: #655D8A;
 }
