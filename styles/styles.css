@@ -4,20 +4,17 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-section {
-  height: 100vh;
-}
-
 h1 {
-  font-size: 3rem;
+  font-size: 3.2rem;
   line-height: 1.5;
   font-weight: 900;
   color: #323232;
 }
 
 h5 {
+  font-weight: 400;
   line-height: 1.5;
-  color: #323232;
+  color: #393E46;
 }
 
 .container-fluid {
@@ -34,8 +31,29 @@ h5 {
   );
 }
 
+/* Nav Bar */
+
+.navbar {
+  padding-bottom: 2.5rem;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
 .hidden {
   display: none;
+}
+
+/* Social Buttons */
+
+.social-button {
+  margin: 5% 3% 5% 0;
 }
 
 .btn-dark {
