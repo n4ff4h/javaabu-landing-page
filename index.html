@@ -15,22 +15,22 @@
     integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
     crossorigin="anonymous"></script>
 
-  <!-- Style Sheet -->
+  <!-- CSS Style Sheet -->
   <link rel="stylesheet" href="./styles/styles.css" />
 
   <!-- Google Fonts -->
   <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Baloo+Bhaijaan+2:wght@600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Rubik:wght@900&display=swap"
     rel="stylesheet" />
 
   <!-- Lottie Player -->
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
   <!-- Animate.css -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- TypeIt -->
+  <script src="https://unpkg.com/typeit@8.2.0/dist/index.umd.js"></script>
 
   <title>Javaabu Pvt. Ltd.</title>
 
@@ -80,17 +80,16 @@
         <!-- Introduction Title -->
         <div class="col-lg-6 col-md-12 col-sm-12 my-auto">
           <h1>Javaabu Pvt. Ltd.</h1>
-          <h5>
-            Web development firm based in Maldives.
+          <h5 id="description">
           </h5>
           <!-- Socials -->
-          <a class="btn btn-outline-light social-button animate__animated animate__bounce" role="button" href="https://www.facebook.com/javaabu">
+          <a class="btn btn-outline-light social-button" role="button" href="https://www.facebook.com/javaabu">
             <i class="fab fa-facebook-f"></i>
           </a>
-          <a class="btn btn-outline-light social-button animate__animated animate__bounce animate__delay-1s" role="button" href="https://twitter.com/javaabumv">
+          <a class="btn btn-outline-light social-button" role="button" href="https://twitter.com/javaabumv">
             <i class="fab fa-twitter"></i>
           </a>
-          <a class="btn btn-outline-light social-button animate__animated animate__bounce animate__delay-2s" role="button" href="https://github.com/Javaabu">
+          <a class="btn btn-outline-light social-button" role="button" href="https://github.com/Javaabu">
             <i class="fab fa-github-alt"></i>
           </a>
         </div>
@@ -109,6 +108,15 @@
   <section id="services">
     <div class="container"></div>
   </section>
+
+  <!-- My scripts -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      new TypeIt("#description", {
+        strings: ["Web development company based in Maldives."],
+      }).go();
+    });
+  </script>
 
   <!-- Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
