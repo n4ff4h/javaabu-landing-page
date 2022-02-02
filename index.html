@@ -23,6 +23,8 @@
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Baloo+Bhaijaan+2:wght@600&display=swap"
     rel="stylesheet" />
 
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
   <title>Javaabu Pvt. Ltd.</title>
 
   <link rel="shortcut icon" href="https://javaabu.com/favicon.ico" />
@@ -31,38 +33,38 @@
 <body>
   <!-- Home Section -->
   <section id="home" class="min-vh-100">
-    <div class="container-fluid" id="home-main-div">
+    <div class="container-fluid min-vh-100" id="home-main-div">
       <!-- Nav Bar -->
       <nav class="navbar navbar-expand-lg navbar-light">
-          <!-- Javaabu Brand -->
-          <a class="navbar-brand" href="#">
-            <!-- Animated SVG -->
-            <img src="./images/animated-logo.svg" alt="javaabu-logo" width="40" height="40"
-              class="d-inline-block align-top" />
-            <span class="hidden">Javaabu</span>
-          </a>
+        <!-- Javaabu Brand -->
+        <a class="navbar-brand" href="#">
+          <!-- Animated SVG -->
+          <img src="./images/animated-logo.svg" alt="javaabu-logo" width="40" height="40"
+            class="d-inline-block align-top" />
+          <span class="hidden">Javaabu</span>
+        </a>
 
-          <!-- Nav Bar Toggle Button -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <!-- Nav Bar Toggle Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <!-- Nav Bar Items -->
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Work</a>
-              </li>
-              </li>
-            </ul>
-          </div>
+        <!-- Nav Bar Items -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Work</a>
+            </li>
+            </li>
+          </ul>
+        </div>
       </nav>
 
       <div class="row">
@@ -85,10 +87,10 @@
         </div>
 
         <!-- Lottie Animation -->
-        <div class="col-lg-6">
-          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <!-- Future reference: change width and height of lottie here... -->
           <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_w51pcehl.json" background="transparent"
-            speed="1" style="width: 512px; height: 512px" loop autoplay></lottie-player>
+            speed="1" style="width: 100%; height: 100%" loop autoplay></lottie-player>
         </div>
       </div>
     </div>
