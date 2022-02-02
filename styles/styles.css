@@ -17,7 +17,8 @@ h5 {
   color: #FFEDDB;
 }
 
-#home {
+#home-section {
+  height: 100vh;
   background-color: #4158d0;
   background-image: linear-gradient(
     30deg,
@@ -73,4 +74,11 @@ h5 {
 .btn-outline-light:hover {
   background-color: #FFEDDB !important;
   color: #655D8A;
+}
+
+/* Make home section responsive */
+@media (max-width: 991.98px) {
+  #home-section {
+    height: 100%;
+  }
 }
