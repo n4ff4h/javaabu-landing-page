@@ -1,133 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Font Awesome -->
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
-      integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
-    <!-- Style Sheet -->
-    <link rel="stylesheet" href="./styles/styles.css" />
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+    integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+    crossorigin="anonymous"></script>
 
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Baloo+Bhaijaan+2:wght@600&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Style Sheet -->
+  <link rel="stylesheet" href="./styles/styles.css" />
 
-    <title>Javaabu Pvt. Ltd.</title>
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Baloo+Bhaijaan+2:wght@600&display=swap"
+    rel="stylesheet" />
 
-    <link rel="shortcut icon" href="https://javaabu.com/favicon.ico" />
-  </head>
+  <title>Javaabu Pvt. Ltd.</title>
 
-  <body>
-    <!-- Home Section -->
-    <section id="home" class="min-vh-100">
-      <div class="container-fluid home-main-div">
-        <!-- Nav Bar -->
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <div class="container-fluid">
-            <!-- Javaabu Brand -->
-            <a class="navbar-brand" href="#">
-              <!-- Animated SVG -->
-              <img
-                src="./images/animated-logo.svg"
-                alt="javaabu-logo"
-                width="40"
-                height="40"
-                class="d-inline-block align-top"
-              />
-              <span class="hidden">Javaabu</span>
-            </a>
+  <link rel="shortcut icon" href="https://javaabu.com/favicon.ico" />
+</head>
 
-            <!-- Nav Bar Toggle Button -->
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
+<body>
+  <!-- Home Section -->
+  <section id="home" class="min-vh-100">
+    <div class="container-fluid" id="home-main-div">
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+          <!-- Javaabu Brand -->
+          <a class="navbar-brand" href="#">
+            <!-- Animated SVG -->
+            <img src="./images/animated-logo.svg" alt="javaabu-logo" width="40" height="40"
+              class="d-inline-block align-top" />
+            <span class="hidden">Javaabu</span>
+          </a>
 
-            <!-- Nav Bar Items -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Work</a>
-                </li>
-                </li>
-              </ul>
-            </div>
+          <!-- Nav Bar Toggle Button -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Nav Bar Items -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Work</a>
+              </li>
+              </li>
+            </ul>
           </div>
-        </nav>
+      </nav>
 
-        <div class="container-fluid">
-          <div class="row">
-            <!-- Introduction Title -->
-            <div class="col-lg-6 my-auto intro-title">
-              <h1>Javaabu Pvt. Ltd.</h1>
-              <h5>
-                Web development firm based in Maldives.
-              </h5>
-              <!-- Socials -->
-              <button class="btn btn-outline-light social-button">
-                <i class="fab fa-facebook-f"></i>
-              </button>
-              <button class="btn btn-outline-light social-button">
-                <i class="fab fa-twitter"></i>
-              </button>
-              <button class="btn btn-outline-light social-button">
-                <i class="fab fa-github-alt"></i>
-              </button>
-            </div>
-  
-            <!-- Lottie Animation -->
-            <div class="col-lg-6">
-              <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-              <lottie-player
-                src="https://assets6.lottiefiles.com/packages/lf20_w51pcehl.json"
-                background="transparent"
-                speed="1"
-                style="width: 512px; height: 512px"
-                loop
-                autoplay
-              ></lottie-player>
-            </div>
-          </div>
+      <div class="row">
+        <!-- Introduction Title -->
+        <div class="col-lg-6 col-md-12 col-sm-12 my-auto">
+          <h1>Javaabu Pvt. Ltd.</h1>
+          <h5>
+            Web development firm based in Maldives.
+          </h5>
+          <!-- Socials -->
+          <button class="btn btn-outline-light social-button">
+            <i class="fab fa-facebook-f"></i>
+          </button>
+          <button class="btn btn-outline-light social-button">
+            <i class="fab fa-twitter"></i>
+          </button>
+          <button class="btn btn-outline-light social-button">
+            <i class="fab fa-github-alt"></i>
+          </button>
+        </div>
+
+        <!-- Lottie Animation -->
+        <div class="col-lg-6">
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_w51pcehl.json" background="transparent"
+            speed="1" style="width: 512px; height: 512px" loop autoplay></lottie-player>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

@@ -17,10 +17,6 @@ h5 {
   color: #FFEDDB;
 }
 
-.home-main-div {
-    padding: 3% 15%;
-}
-
 #home {
   background-color: #4158d0;
   background-image: linear-gradient(
@@ -31,11 +27,12 @@ h5 {
   );
 }
 
-/* Nav Bar */
 
-/* .navbar {
-  padding-bottom: 2.5rem;
-} */
+#home-main-div {
+  padding: 3% 15%;
+}
+
+/* Nav Bar */
 
 .navbar-brand {
   width: 150px;
