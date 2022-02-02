@@ -94,7 +94,6 @@ h5 {
 }
 
 .card {
-  height: 600px;
   z-index: 1;
   overflow: hidden;
   border-radius: 10px;
