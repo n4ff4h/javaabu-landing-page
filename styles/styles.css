@@ -34,9 +34,9 @@ h5 {
 
 /* Nav Bar */
 
-/* .navbar {
-  padding: 0 0 4.5rem;
-} */
+.navbar {
+  padding: 0 0 5rem;
+}
 
 .navbar-brand {
   width: 150px;
@@ -50,7 +50,7 @@ h5 {
 
 .nav-link {
   font-size: 1.2rem;
-  font-weight: 300;
+  font-weight: 600;
 }
 
 .hidden {
