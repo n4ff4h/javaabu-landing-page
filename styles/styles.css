@@ -28,6 +28,10 @@ h6 {
   font-weight: 600;
 }
 
+a:hover {
+  color: #eeeade;
+}
+
 #home-section {
   height: 100vh;
   background-color: #4158d0;
@@ -67,6 +71,10 @@ h6 {
 .nav-link {
   font-size: 1.2rem;
   font-weight: 600;
+}
+
+.nav-link:hover {
+  color: white !important;
 }
 
 .hidden {
@@ -179,17 +187,12 @@ h6 {
 
 .footer-text {
   font-family: "Montserrat", sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   color: #eeeade;
+  text-decoration: none;
 }
 
 .footer-hr {
-  color: #e91e65;
-  border: none;
-  height: 5px;
-}
-
-.footer-link {
-  font-weight: 400;
-  color: #faad80;
+  border: 1px solid #e91e65;
+  border-radius: 5px;
 }
