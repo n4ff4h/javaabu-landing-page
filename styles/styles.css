@@ -22,6 +22,12 @@ h5 {
   color: #FFEDDB;
 }
 
+h6 {
+  color: #FFEDDB;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
 #home-section {
   height: 100vh;
   background-color: #4158d0;
@@ -149,4 +155,23 @@ h5 {
 .client-logo {
   height: 100px;
   width: 100px;
+}
+
+.client-logo:hover {
+  animation: pulse;
+  animation-duration: 1s;
+}
+
+.page-footer {
+  background-color: #3F3D56;
+}
+
+.footer-paragraph-color {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  color: #EEEADE;
+}
+
+.footer-hr {
+  color: #E91E65;
 }
