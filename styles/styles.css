@@ -104,6 +104,11 @@ h5 {
   transition: .5s;
 }
 
+.card-img-top {
+  height: 150px;
+  width: 75%;
+}
+
 .card::before {
   content: "";
   position: absolute;
@@ -122,4 +127,9 @@ h5 {
 
 #services-main-div {
   padding: 3% 8%;
+}
+
+.client-logos {
+  height: 75px;
+  width: 75px;
 }
