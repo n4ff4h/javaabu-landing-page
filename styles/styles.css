@@ -12,6 +12,10 @@ h1 {
   color: #FFEDDB;
 }
 
+h3 {
+  font-size: large;
+}
+
 h5 {
   font-size: 1.5rem;
   font-weight: 300;
