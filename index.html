@@ -5,6 +5,8 @@
   <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Caching -->
+  <meta http-equiv="Cache-control" content="public">
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -14,6 +16,9 @@
   <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
     integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
     crossorigin="anonymous"></script>
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
 
   <!-- CSS Style Sheet -->
   <link rel="stylesheet" href="./styles/styles.css" />
@@ -76,7 +81,7 @@
       </nav>
 
       <!-- Intro title and Lottie animation -->
-      <div class="row flex-lg-row align-items-center g-5 py-5">
+      <div class="row flex-lg-row align-items-center g-5 pt-5 pb-8">
         <!-- Introduction Title -->
         <div class="col-lg-6 col-md-12 col-sm-12 my-auto">
           <h1>Javaabu Pvt. Ltd.</h1>
@@ -94,13 +99,19 @@
           </a>
         </div>
 
-        <!-- Lottie Animation -->
+        <!-- Lottie Animation (laptop) -->
         <div class="col-lg-6 col-md-12 col-sm-12">
           <!-- Future reference: change width and height of lottie here... -->
           <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_w51pcehl.json" background="transparent"
             speed="1" style="width: 100%; height: 100%" loop autoplay></lottie-player>
         </div>
       </div>
+    </div>
+
+    <!-- Lottie Animation (down arrow) -->
+    <div class="position-relative m-0">
+      <lottie-player class="position-absolute bottom-0 start-50 translate-middle" src="./lottiefiles/down-arrow.json" background="transparent"
+            speed="1" style="width: 75px; height: 75px" loop autoplay></lottie-player>
     </div>
   </section>
 
@@ -133,7 +144,7 @@
         <!-- Web Development Column -->
         <div class="div col-lg-3 col-sm-6 col-12 m-auto mt-4">
           <!-- Card start -->
-          <div class="card shadow">
+          <div class="card shadow" id="card-web-development">
             <img src="./images/illustrations/web-development.svg" alt="" class="card-img-top mx-auto mt-4 mb-4">
             <div class="card-body">
               <h3 class="text-center">Web Development</h3>
@@ -149,7 +160,7 @@
         <!-- Mobile Development Column -->
         <div class="div col-lg-3 col-sm-6 col-12 m-auto mt-4">
           <!-- Card start -->
-          <div class="card shadow">
+          <div class="card shadow" id="card-mobile-development">
             <img src="./images/illustrations/mobile-development.svg" alt="" class="card-img-top mx-auto mt-4 mb-4">
             <div class="card-body">
               <h3 class="text-center">Mobile Development</h3>
@@ -165,7 +176,7 @@
         <!-- Graphics Design -->
         <div class="div col-lg-3 col-sm-6 col-12 m-auto mt-4">
           <!-- Card start -->
-          <div class="card shadow">
+          <div class="card shadow" id="card-graphics-design">
             <img src="./images/illustrations/graphics-design.svg" alt="" class="card-img-top mx-auto mt-4 mb-4">
             <div class="card-body">
               <h3 class="text-center">Graphics Design</h3>
@@ -181,7 +192,7 @@
         <!-- Consulting -->
         <div class="div col-lg-3 col-sm-6 col-12 m-auto mt-4">
           <!-- Card start -->
-          <div class="card shadow">
+          <div class="card shadow" id="card-consulting">
             <img src="./images/illustrations/consulting.svg" alt="" class="card-img-top mx-auto mt-4 mb-4">
             <div class="card-body">
               <h3 class="text-center">Consulting</h3>
@@ -210,11 +221,9 @@
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
 
           <!-- Content -->
-          <h6 class="text-uppercase font-weight-bold">Company name</h6>
-          <hr class="footer-hr accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-          <p class="footer-paragraph-color">Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-            consectetur
-            adipisicing elit.</p>
+          <h6 class="text-uppercase font-weight-bold">Javaabu Pvt. Ltd.</h6>
+          <hr class="footer-hr mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p class="footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum nisi dui, vel hendrerit nisi pellentesque vitae. Proin vitae facilisis sem, vitae viverra dolor.</p>
 
         </div>
         <!-- Grid column -->
@@ -224,15 +233,15 @@
 
           <!-- Links -->
           <h6 class="text-uppercase font-weight-bold">Useful links</h6>
-          <hr class="footer-hr accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <hr class="footer-hr mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
           <p>
-            <a href="#!">Home</a>
+            <a class="footer-text" href="#home">Home</a>
           </p>
           <p>
-            <a href="#!">About</a>
+            <a class="footer-text" href="#about">About</a>
           </p>
           <p>
-            <a href="#!">Work</a>
+            <a class="footer-text" href="#work">Work</a>
           </p>
 
         </div>
@@ -243,21 +252,21 @@
 
           <!-- Links -->
           <h6 class="text-uppercase font-weight-bold">Contact</h6>
-          <hr class="footer-hr accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-          <p class="footer-paragraph-color">
-            <i class="fas fa-home mr-3 footer-paragraph-color"></i> M. Banff Villa 3A,
+          <hr class="footer-hr mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p class="footer-text">
+            <i class="bi bi-geo-alt-fill mr-3"></i> M. Banff Villa 3A,
             Majeedhee Magu
             Male', 20259
             Republic of Maldives
           </p>
-          <p class="footer-paragraph-color">
-            <i class="fas fa-envelope mr-3 footer-paragraph-color"></i> info@javaabu.com
+          <p class="footer-text">
+            <i class="bi bi-envelope-fill mr-3"></i> info@javaabu.com
           </p>
-          <p class="footer-paragraph-color">
-            <i class="fas fa-phone mr-3 footer-paragraph-color"></i> + 01 234 567 88
+          <p class="footer-text">
+            <i class="bi bi-telephone-fill mr-3"></i> + 960 3315282
           </p>
-          <p class="footer-paragraph-color">
-            <i class="fas fa-print mr-3 footer-paragraph-color"></i> + 01 234 567 89
+          <p class="footer-text">
+            <i class="bi bi-telephone-fill mr-3"></i> + 960 7528222
           </p>
 
         </div>
@@ -270,8 +279,8 @@
     <!-- Footer Links -->
 
     <!-- Copyright -->
-    <div class="footer-copyright footer-paragraph-color text-center py-3">© 2022 Copyright:
-      <a style="font-weight: 400;" href="https://javaabu.com/"> Javaabu Pvt. Ltd.</a>
+    <div class="footer-copyright footer-text text-center py-3">© 2022 Copyright:
+      <a class="footer-text" href="https://javaabu.com/"> Javaabu Pvt. Ltd.</a>
     </div>
     <!-- Copyright -->
 
