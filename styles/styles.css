@@ -99,6 +99,10 @@ a:hover {
   color: #655d8a;
 }
 
+.pb-8 {
+  padding-bottom: 6rem !important;
+}
+
 /* Make home section responsive */
 @media (max-width: 991.98px) {
   #home-section {
@@ -139,7 +143,7 @@ a:hover {
 }
 
 #card-graphics-design::before {
-  background: #A7C7E7;
+  background: #a7c7e7;
 }
 
 #card-consulting::before {
